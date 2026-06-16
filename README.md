@@ -21,3 +21,18 @@ The cfDNA Mutect2 pipeline generator used in this project is maintained as a sep
 [cfDNA_Mutect2_generator](https://github.com/CKNckn11/cfDNA_Mutect2_generator)
 
 It provides a lightweight shell-script generator for tumor-only cfDNA somatic mutation calling, including Mutect2 calling, contamination estimation, filtering, ANNOVAR annotation, and final mutation table aggregation from a YAML configuration file.
+
+This tool does not run all analysis jobs automatically inside Python. Instead, it generates an independent shell-based project that can be submitted and monitored manually on a local server or computing cluster.
+
+```bash
+$ python generate_pipeline.py -h
+usage: cfdna-mutect2-generate [-h] [-v] --config CONFIG [--outdir OUTDIR]
+
+cfDNA Mutect2 Pipeline Generator (Version = 0.1.0): Generate tumor-only cfDNA Mutect2 shell scripts from a YAML config.
+
+optional arguments:
+  -h, --help       show this help message and exit
+  -v, --version    show the version of cfdna-mutect2-generate and exit.
+  --config CONFIG  YAML config file.
+  --outdir OUTDIR  Override project.outdir from the YAML config.
+```
