@@ -2,11 +2,11 @@
 ctDNA mutation profiling identifies plasma-derived prognostic biomarkers in breast cancer and supports a seven-gene survival risk model for liquid biopsy-based risk stratification.
 ## Workflow
 
-### cfDNA Workflow
+### ctDNA Profiling Workflow
 
-![cfDNA study workflow](Figure1/workflow_cfDNA.png)
+![ctDNA profiling workflow](Figure1/workflow_cfDNA.png)
 
-This workflow summarizes the overall cfDNA study design, including sample collection, mutation profiling, clinical integration, biomarker screening, and survival risk model development.
+This workflow summarizes the plasma cfDNA-based ctDNA profiling process, including blood collection, cfDNA isolation, cfDNA sequencing, variant calling, and ctDNA mutation profiling.
 
 ### Mutect2 Analysis Workflow
 
@@ -18,7 +18,7 @@ This workflow summarizes the Mutect2-based somatic mutation calling process used
 
 The cfDNA Mutect2 pipeline generator used in this project is maintained as a separate repository:
 
-[cfDNA_Mutect2_generator](https://github.com/CKNckn11/cfDNA_Mutect2_generator)
+[cfDNA_Mutect2_generator](https://github.com/Leelab-Kmmu/cfDNA_Mutect2_generator)
 
 It provides a lightweight shell-script generator for tumor-only cfDNA somatic mutation calling, including Mutect2 calling, contamination estimation, filtering, ANNOVAR annotation, and final mutation table aggregation from a YAML configuration file.
 
